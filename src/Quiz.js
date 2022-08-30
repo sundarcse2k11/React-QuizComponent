@@ -15,13 +15,9 @@ class Quiz extends React.Component
         console.log(quizData.quiz_questions);
         return(
             <div>
-                <div className='QuizQuestion'>
-               {quizData.quiz_questions.map((quiz_questions) => 
-                <div key={quiz_questions['id']}>
-                    {quiz_questions['instruction_text']}
-                </div>    
-                )};             
-                </div>
+               <div className='QuizQuestion'>
+                    {quizData.quiz_questions[0].instruction_text}
+               </div>
             </div>
         )
     }
